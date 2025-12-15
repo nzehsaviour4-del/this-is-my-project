@@ -1,0 +1,228 @@
+/* Global */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #f2f2f2;
+    color: #333;
+}
+
+
+/* Header */
+header{
+    background: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+header .logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a{
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover{
+    color: #aaa;
+}
+
+
+/* Hero */
+.hero{
+    background: url(background3.jpg) center;
+    background-size: contain;
+    padding: 130px 50px;
+    color: rgb(14, 1, 1);
+    text-align: center;
+}
+
+.hero h1{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 18px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background:#ffcc00;
+    color: black;
+    font-weight: bold;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+
+/* Products */
+.products{padding: 60px 50px;
+    text-align: center;
+   
+}
+
+.product-box{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.box{
+    background:white;
+    width:30%;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+/*product Gallery */
+.gallery{
+    padding:60px 50px;
+    text-align:center;
+}
+
+.gallery-box{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+}
+
+.gallery-box img{
+    width:100%;
+    border-radius:8px;
+    height:200px;
+    object-fit:cover;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+/*project*/
+.projects{
+padding: 60px 50px;
+align-items: center;}
+
+
+.projects-box{
+    margin-top:20px;
+    display:flex;
+    justify-content:space-between;
+}
+
+.box{
+    background:white;
+    width:30%;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,.08);
+}
+
+/* project Gallery */
+.gallery{
+    padding:60px 50px;
+    text-align:center;
+}
+
+.gallery-box{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:15px;
+}
+
+.gallery-box img{
+    width:100%;
+    border-radius:8px;
+    height:200px;
+    object-fit:cover;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+
+
+
+
+/* Contact */
+.contact{
+    padding:60px 50px;
+    background:#fff;
+    text-align:center;
+}
+
+.contact form{
+    width:60%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input, 
+.contact textarea{
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.contact button{
+    padding:14px;
+    background:#ffcc00;
+    border:none;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.contact button:hover{
+    background:#e6b800;
+}
+
+@media(max-width:800px){
+    .gallery-box{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-box{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .product-box .box{
+        width:100%;
+    }
+
+    .contact form{
+        width:100%;
+    }
+}
+
+
+/* About */
+.about{
+    padding: 60px 50px;
+    text-align:center;
+}
+
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
